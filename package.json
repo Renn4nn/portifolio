@@ -9,8 +9,14 @@
     "preview": "vite preview --port 4500"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^1.73.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "simple-icons": "^16.38.0",
+    "tailwindcss": "^4.3.5"
   },
   "devDependencies": {
     "vite": "^6.4.1"

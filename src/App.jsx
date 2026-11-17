@@ -1,4 +1,6 @@
 import React from "react";
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Instagram } from "./SocialIcons";
 import { projects } from "./projects";
 import Project from "./Project";
 export default function App() {
@@ -14,13 +16,10 @@ export default function App() {
           <span aria-hidden="true" />
           <span className="edition">PORTFÓLIO / 2026</span>
           <a className="nav-link" href="#projetos">
-            Explorar projetos <span>↘</span>
+            Explorar projetos <ArrowDownRight size={20} aria-hidden="true" />
           </a>
         </nav>
         <div className="hero-caption">
-          <span className="eyebrow">
-            <i></i> CÓDIGO, IDEIAS E EXPERIÊNCIAS.
-          </span>
           <h1>
             Renan
             <br />
@@ -38,25 +37,27 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn ↗
+              <Linkedin size={18} aria-hidden="true" /> LinkedIn{" "}
+              <ArrowUpRight size={13} aria-hidden="true" />
             </a>
             <a
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram ↗
+              <Instagram size={18} aria-hidden="true" /> Instagram{" "}
+              <ArrowUpRight size={13} aria-hidden="true" />
             </a>
             <a
               href="https://github.com/Renn4nn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub ↗
+              <Github size={18} aria-hidden="true" /> GitHub{" "}
+              <ArrowUpRight size={13} aria-hidden="true" />
             </a>
           </div>
         </div>
-        <span className="photo-label">NOS BASTIDORES, CONSTRUINDO.</span>
       </header>
       <main>
         <section className="projects" id="projetos">
@@ -91,9 +92,12 @@ export default function App() {
             <span className="eyebrow">POR TRÁS DO CÓDIGO</span>
             <h2>Prazer, Renan.</h2>
             <p>
-              Desenvolvedor FullStack. Este é meu espaço para compartilhar
-              projetos, explorar ideias e mostrar o que acontece quando elas
-              saem do papel.
+              Sou desenvolvedor FullStack em Londrina e estudante de Engenharia
+              de Software na Universidade Positivo. Na CTD, atuo no
+              desenvolvimento de soluções web, APIs e integrações. Minha
+              experiência também passa pelo desenvolvimento mobile na CMTU,
+              conectando interfaces e serviços às necessidades de quem usa cada
+              solução.
             </p>
             <a
               className="text-link"
@@ -101,7 +105,8 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Mais sobre meu trabalho no GitHub ↗
+              Mais sobre meu trabalho no <Github size={18} aria-hidden="true" />{" "}
+              GitHub <ArrowUpRight size={13} aria-hidden="true" />
             </a>
           </div>
         </section>
