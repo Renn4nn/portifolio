@@ -1,8 +1,16 @@
 # Renan Vieira — portfólio
-Frontend estático em HTML, CSS e JavaScript. Sem API, instalação ou build.
 
-Abra `index.html` no navegador ou sirva a pasta na porta 4500.
-Os projetos e seus links ficam em `script.js`. As redes sociais ficam em `index.html`, dentro de `.socials`.
-As imagens foram copiadas das fotos e da pasta PRINTS fornecidas. As sombras são aplicadas por CSS.
+Frontend em React e Vite, sem API.
 
-Para iniciar: `cd portfolio` e `node server.cjs`. Acesse http://localhost:4500.
+## Desenvolvimento
+
+```sh
+npm install
+npm run dev
+```
+
+Acesse http://localhost:4500. Para gerar o site estático: `npm run build` (saída em `dist/`).
+
+Os projetos ficam em `src/projects.js`, a apresentação em `src/App.jsx` e os estilos em `src/style.css`. Imagens em `public/assets/`.
+
+Carrosséis avançam a cada 5 segundos, pausam durante interação, permitem navegação por setas e toque e respeitam a preferência por movimento reduzido.
